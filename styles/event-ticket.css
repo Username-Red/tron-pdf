@@ -1,0 +1,163 @@
+/* ------------------------------
+   Tron-Inspired Event Ticket PDF
+------------------------------- */
+
+@page {
+    background-color: #000000; /* Deep black */
+}
+
+body {
+    font-family: 'Arial', 'Segoe UI', sans-serif;
+    background-color: #0a0a0a; /* Deep black */
+    color: #e5e7eb; /* White-ish text */
+    margin: 0;
+    padding: 20px;
+    font-size: 12pt;
+}
+
+/* ------------------------------
+   HEADER
+------------------------------- */
+
+.header-table {
+    width: 100%;
+    border-bottom: 2px solid #00f0ff; /* Neon blue line */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.header-logo img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #00f0ff;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.header-title {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #00f0ff; /* Neon blue */
+    text-align: center;
+}
+
+.header-date {
+    font-size: 10pt;
+    color: #ff5e00; /* Neon orange accent */
+    text-align: center;
+}
+
+/* ------------------------------
+   SECTION TITLES
+------------------------------- */
+
+.section-title {
+    background: #0a0a0a;
+    text-align: center;
+    font-size: 16pt;
+    color: #00f0ff;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #00f0ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* ------------------------------
+   TABLE STYLING
+------------------------------- */
+
+.fancy-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fancy-info-table th,
+.fancy-info-table td {
+    padding: 12px 10px;
+    border: 1px solid #00f0ff;
+}
+
+.fancy-info-table th {
+    background-color: #0a0a0a;
+    color: #00f0ff;
+    font-size: 12pt;
+}
+
+.fancy-info-table td {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-size: 11pt;
+}
+
+/* Alternate row shading for subtle neon glow effect */
+.fancy-info-table tbody tr:nth-child(even) td {
+    background-color: #0d0d0d;
+}
+
+/* Highlight the first column (field names) in neon blue */
+.fancy-info-table td:first-child {
+    color: #00f0ff;
+    font-weight: bold;
+}
+
+/* ------------------------------
+   BARCODE / QR CODE
+------------------------------- */
+
+.barcode-container {
+    text-align: center; /* Ensures child elements are centered */
+    margin: 20px 0;
+}
+
+.barcode {
+    display: inline-block; /* Make it respect parent text alignment */
+    border: 2px solid #ff5e00; /* Neon orange outline */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #ff5e00, 0 0 12px #ff5e00; /* Optional neon glow */
+}
+
+
+/* ------------------------------
+   LINKS & ACCENTS
+------------------------------- */
+
+a {
+    color: #00f0ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff5e00;
+}
+
+/* ------------------------------
+   SMALL PRINT / FOOTER
+------------------------------- */
+
+.footer {
+    text-align: center;
+    font-size: 9pt;
+    color: #999999;
+    margin-top: 30px;
+}
+
+/* ------------------------------
+   NEON GLOW EFFECTS
+------------------------------- */
+
+.header-title,
+.fancy-info-table th,
+.fancy-info-table td:first-child,
+.section-title {
+    text-shadow: 0 0 4px #00f0ff, 0 0 10px #00f0ff;
+}
+
+.barcode {
+    box-shadow: 0 0 8px #ff5e00, 0 0 12px #ff5e00;
+}
