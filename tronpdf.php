@@ -28,7 +28,7 @@ $addons_list = !empty($addons) ? implode(', ', $addons) : 'None';
 
 <style>
     @page {
-        background: #000000;
+        background: blue;
     }
 </style>
 
